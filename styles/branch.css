@@ -1,0 +1,162 @@
+@import url("./style.css");
+/* ================================ */
+body{
+    background-image: url("../img/back_4.jpg");
+    background-blend-mode: multiply;
+    background-color: rgba(30, 16, 16, 0.789);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    justify-content: space-between;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+body, section{
+    display: flex;
+    align-items: center;
+}
+
+
+/* =============================== */
+h1{
+    color: #FEFEFE;
+    font-size: 3rem;
+}
+
+.accordion{
+    /* border: solid 2px lightblue; */
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+}
+
+.accordion-item {
+    border: solid 2px rgb(106,47,41);
+    border-radius: 15px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0% 5% 0%;
+    margin: 5% 0% 5% 0%;
+}
+
+.photo{
+    width: 90%;
+    border: transparent;
+    border-radius: 20px;
+}
+
+.accordion-header {
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+    /* border: solid 1px green; */
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header img{
+    width: 12%;
+    opacity: 85%;
+}
+
+.accordion-header p{
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* ===== CONTENT ====== */
+.accordion-content {
+    border-top: solid 1px #fefefe62;
+    color: #FEFEFE;
+    padding: 10px;
+    display: none;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-content figure{
+    display: flex;
+    justify-content: left;
+    /* border: solid 1px yellow; */
+}
+
+.accordion-content figure img{
+    width: 10%;
+}
+
+.accordion-content figure figcaption{
+    margin-left: 5%;
+}
+
+.accordion-content figure figcaption a{
+    color: rgb(181, 181, 181);
+}
+
+.accordion-content figure figcaption a:visited{
+    color: rgb(202, 199, 199);
+}
+/* =================BACK========= */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div{
+    width: 6%; /* mus the be same as #back_btn in style.css */
+}
+/* ========= Adaptive adjustments - Tablets ======= */
+@media screen and (min-width: 540px){
+    #back_btn{
+        width: 4%;
+    }
+    .accordion{
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .accordion-item{
+        width: 45%;
+        padding: 1% 0% 1% 0%;
+        margin: 1% 0% 1% 0%;
+        align-self: flex-start;
+    }
+}
+
+/* @media screen 
+and (min-device-width: 768px) 
+and (min-device-height: 1025px) 
+and (max-device-height: 1366px){
+
+} */
+
+/* ========= Adaptive adjustments - Desktop ======= */
+@media screen and (min-width: 1024px) {
+
+    #back_btn{
+        width: 2%;
+    }
+    .accordion{
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .accordion-item{
+        width: 20%;
+        padding: 1% 0% 1% 0%;
+        align-self: flex-start;
+        margin: 1% 0% 1% 0%;
+    }
+}

@@ -1,0 +1,138 @@
+@import url("style.css");
+
+body{
+
+    background-image: url("../img/back_order.jpg");
+    background-blend-mode: multiply;
+    background-color: rgba(30, 16, 16, 0.789);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+body, header, .btn{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    width: 80%;
+    height: 50vh;
+
+
+    /* border: solid 0.5px rgba(255, 255, 255, 0.377); */
+    /* border-radius: 10px; */
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5% 2% 5% 2%;
+}
+
+h1{
+    color: #FEFEFE;
+
+}
+
+.btn{
+    text-decoration: none;
+    width: 75%;
+    border: solid 2px rgb(106,47,41);
+    border-radius: 10px;
+
+    justify-content: space-between;
+    padding: 2% 7% 2% 7%;
+}
+
+.btn:active{
+    transition: scale(0.9);
+    transform: .3s ease;
+}
+
+.btn img{
+    width: 20%;
+    border: transparent;
+    border-radius: 20%;
+}
+
+p{
+    color: #FEFEFE;
+    font-size: 1.5rem;
+}
+
+.btn:active{
+    transform: scale(0.9);
+    transition: .3s ease;
+}
+
+.custom{
+    border: solid 1px rgb(170, 131, 126);
+}
+/* ========= BACK ========== */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div{
+    width: 6%; /* mus the be same as #back_btn in style.css */
+}
+
+nav h1{
+    font-size: 3rem;
+}
+/* ========= Adaptive adjustments - Tablets ======= */
+@media screen and (min-width: 540px){
+    .btn{
+        height: 15%;
+    }
+
+    .btn img{
+        width: 15%;
+    }
+}
+
+@media screen 
+and (min-device-width: 768px) 
+and (min-device-height: 1025px) 
+and (max-device-height: 1366px){
+    .btn{
+        height: 15%;
+    }
+
+    .btn img{
+        width: 15%;
+    }
+
+}
+
+/* ========= Adaptive adjustments - Desktop ======= */
+@media screen and (min-width: 1024px) {
+    .btn img{
+        width: 9%;
+    }
+
+    header{
+        width: 50%;
+    }
+
+    .btn{
+        height: 10%;
+    }
+
+    .btn:hover{
+        transform: scale(1.1);
+        transition: .3s ease;
+    }
+    .btn:active{
+        transform: scale(0.9);
+        transition: .3s ease;
+    }
+
+    #back_btn{
+        width: 2%;
+    }
+}

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Blacker Sans Text';
+    src: 
+        local('Blacker Sans Text Book'), local('Blacker-Sans-Text-Book'),
+        url('../font/BlackerSansText-Book.woff2') format('woff2'),
+        url('../font/BlackerSansText-Book.woff') format('woff'),
+        url('../font/BlackerSansText-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ========= Main config ========= */
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    font-family: "Blacker Sans Text", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow: hidden;
+}
+
+/* ======= preloader ========= */
+#preloader {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(106,47,41);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#load_stick {
+    width: 30px;
+    height: 30px;
+    background-color: #FEFEFE;
+    border-radius: 20%;
+    animation: loader 2s ease-in-out infinite;
+}
+
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ======== FADE-in ============= */
+.fade-in{
+    align-self: center;
+    color: #FEFEFE;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.fade-in.show{
+    opacity: 1;
+    transition: opacity ease 2s, transform ease 2s;
+    transform: translateY(0%);
+}
+/* ========== BACK BUTTON ========= */
+#back_btn{
+    transform: rotate(90deg);
+    width: 6%;
+    opacity: 85%;
+    transition: .3s ease;
+}
+
+#back_btn:hover{
+    transform: scale(1.1) rotate(90deg);
+}
+
+#back_btn:active{
+    transform: scale(0.9) rotate(90deg);
+}
+
+/* ======== FOOTER ======== */
+footer{
+    width: 100%;
+    height: 3%;
+    margin-top: 2%;
+    opacity: 80%;
+    
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(106,47,41);
+    border-top: solid 1px rgba(53, 25, 21, 0.49);
+}
+
+footer, .links{
+    display: flex;
+    align-items: center;
+}
+
+footer .links{
+    opacity: 70%;
+    width: 70%;
+    justify-content: space-between;
+    max-height: 100%;
+    font-size: 0.9rem;
+    color: #FEFEFE;
+}
+
+.links a{
+    text-decoration: none;
+    color: #FEFEFE;
+}

@@ -1,0 +1,119 @@
+@import url("./style.css");
+/* ========================== */
+body{
+    /* background-color: rgba(61, 32, 28, 0.8); */
+    /* background-image: linear-gradient(rgb(106,47,41), rgb(116,47,51)); */
+
+    background-image: url("../img/back_2.jpg");
+    background-blend-mode: multiply;
+    background-color: rgba(30, 16, 16, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow-y: scroll;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    width: 80%;
+    color: #FEFEFE;
+}
+/* ======= header =========== */
+header{
+    width: 100%;
+    height: 100vh;
+    border-bottom: solid 1px rgb(162, 76, 67);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#bon_logo{
+    width: 50%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+/* ============= NAV  ======== */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div{
+    width: 6%; /* mus the be same as #back_btn in style.css */
+}
+
+h1{
+    font-size: 2rem;
+    color:#FEFEFE;
+}
+
+/* =============Article========= */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+article img{
+    width: 100%;
+    /* border: solid 1px rgb(126, 115, 115); */
+    border: solid 2px rgba(106, 48, 41, 0.798);
+    border-radius: 20px;
+
+}
+
+article p{
+    opacity: 90%;
+}
+/* ========= Adaptive adjustments - Tablets ======= */
+@media screen and (min-width: 540px){
+    #back_btn{
+        width: 4%;
+    }
+    #bon_logo{
+        width: 35%;
+    }
+    article{
+        width: 80%;
+    }
+}
+
+@media screen 
+and (min-device-width: 768px) 
+and (min-device-height: 1025px) 
+and (max-device-height: 1366px){
+    #back_btn{
+        width: 4%;
+    }
+    #bon_logo{
+        width: 35%;
+    }
+    article{
+        width: 80%;
+    }
+}
+
+/* ========= Adaptive adjustments - Desktop ======= */
+@media screen and (min-width: 1024px) {
+    #back_btn{
+        width: 3%;
+    }
+    #bon_logo{
+        width: 15%;
+    }
+    article{
+        width: 40%;
+    }
+}

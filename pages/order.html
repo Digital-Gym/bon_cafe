@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/order.css">
+    <script type="module" src="../scripts/script.js"></script>
+    <link rel="icon" href="../img/logo.jpg" type="image/jpg">
+    
+    <title>Bon! - Order</title>
+</head>
+<body>
+    <div id="preloader">
+        <div id="load_stick"></div>
+    </div>
+
+    <nav class="fade-in">
+        <img id="back_btn" src="../img/branch_icon_4.png" alt="back">
+        <h1>Order links</h1>
+        <div></div>
+    </nav>
+    
+
+    <header class="fade-in">
+        <a class="btn" href="https://eats.yandex.com/uz/search?query=Bon%21%20&type=">
+            <img src="../img/order_icon_1.jpg" alt="icon">
+            <p>Yandex Eats</p>
+        </a>
+        <a class="btn" href="https://express24.uz/store/294">
+            <img src="../img/order_icon_2.jpg" alt="icon">
+            <p>Express24</p>
+        </a>
+        <a class="btn" href="https://uzumtezkor.uz/">
+            <img src="../img/order_icon_3.jpg" alt="icon">
+            <p>Uzum Tezkor</p>
+        </a>
+        <a class="btn custom" href="branches.html">
+            <img src="../img/logo.jpg" alt="icon">
+            <p>See locations</p>
+        </a>
+    </header>
+
+    <div></div>
+
+    <script>
+        document.getElementById('back_btn').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon!</title>
+
+    <script type="module" src="scripts/home.js"></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="img/logo.jpg" type="image/jpg">
+
+</head>
+<body>
+    <div id="preloader">
+        <div id="load_stick"></div>
+    </div>
+
+    <header>
+        <img id="logo" src="img/logo.png" alt="logo">
+        <a class="arrow_container" href="#menu"><img class="fade-in arrows" src="img/стрелка.png" alt="arrow_down"></a>
+    </header>
+
+    <section id="menu">
+        <div class="menu_content">
+            <h2 class="fade-in">Menu</h2>
+            
+            <div class="slider_container fade-in">
+                <ul class="slider">
+                    <li class="meal_type" id="breakfast">
+                        <a href="pages/menu.html#breakfast">
+                            <img class="dish" src="img/dish_2.png" alt="dish-photo">
+                            <p>Breakfast</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="omlettes">
+                        <a href="pages/menu.html#omlettes">
+                            <img class="dish" src="img/dish_3.png" alt="dish-photo">
+                            <p>Omlettes</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="pankakes">
+                        <a href="pages/menu.html#pankakes">
+                            <img class="dish" src="img/dish_4.png" alt="dish-photo">
+                            <p>Pankakes, Tarts and Quiches</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="crepes">
+                        <a href="pages/menu.html#crepes">
+                            <img class="dish" src="img/dish_5.png" alt="dish-photo">
+                            <p>French Crepes</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="soup">
+                        <a href="pages/menu.html#soups">
+                            <img class="dish" src="img/dish_6.png" alt="dish-photo">
+                            <p>Soups</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="sandwiches">
+                        <a href="pages/menu.html#sandwiches">
+                            <img class="dish" src="img/dish_7.png" alt="dish-photo">
+                            <p>Sandwiches</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="salads">
+                        <a href="pages/menu.html#salads">
+                            <img class="dish" src="img/dish.png" alt="dish-photo">
+                            <p>Salads</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="courses">
+                        <a href="pages/menu.html#courses">
+                            <img class="dish" src="img/dish_8.png" alt="dish-photo">
+                            <p>Main Courses</p>
+                        </a>
+                    </li>
+                    <li class="meal_type" id="drinks">
+                        <a href="pages/menu.html#drinks">
+                            <img class="dish" src="img/dish_9.png" alt="dish-photo">
+                            <p>Hot drinks</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a id="btn_menu" class="fade-in" href="pages/menu.html">The full list</a>
+        </div>
+    </section>
+
+    <section id="branches" class="changing-back">
+        <div class="branch_content">
+            <h2 class="fade-in">Branches</h2>
+            <a class="fade-in" id="btn_branch" href="pages/branches.html">Discover</a>
+        </div>
+        <a class="arrow_container" href="#rate"><img class="fade-in arrows" src="img/стрелка.png" alt="arrow_down"></a>
+    </section>
+
+    <section id="rate">
+        <div id="thx_alert">Thank you🤎</div>
+        <div class="rate_content">
+            <h3 class="fade-in">Rate us</h3>
+            <img class="fade-in" id="insta-photos" src="img/rates_2.png" alt="rates_photo">
+            <div class="rate_form_wrap fade-in">
+                <form>
+                    <span class="input-area">
+                        <input id="user_name" type="text" placeholder="Your name" required maxlength="20">
+                        <textarea id="user_text" placeholder="Review.." required maxlength="250"></textarea>
+                    </span>
+                    <button id="btn_rate">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2 class="fade-in">About us</h2>
+            <a class="about-card fade-in" href="https://www.instagram.com/beggy_a/">
+                <img src="img/ceo.jpg" alt="ceo_photo">
+                <div>
+                    <h3>Bekzod Ashurov</h3>
+                    <p>The leader of the coffee shop chain "Bon!"</p> <!--Руководитель сети кофеен Bon!-->
+                </div>
+            </a>
+            <a class="fade-in" id="btn_about" href="pages/about.html">Learn more</a>
+        </div>        
+    </section>
+    
+</body>
+</html>
