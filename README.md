@@ -22,6 +22,7 @@ The goal of the site is to be a beautiful landing site with all the necessary in
 - Abous us page with full story of "Bon!"
 
 ---
+<!--
 ### 🧱Project structure and plan
 *Here is some "gorgeous illustrations" that I created in Paint*\
 ![initial_plan](img/PLAN.png)
@@ -29,7 +30,7 @@ The goal of the site is to be a beautiful landing site with all the necessary in
 
 *How ```style/js``` files were organized*
 ![file_dependecies](img/FILE-SCHEME.png)
-
+-->
 <p align="center">
 <b>Thanks for your attention | <code>00015641</code></b>
 </p>
